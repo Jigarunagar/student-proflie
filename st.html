@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/st.css'>
+    <script src='/st.js'></script>
+</head>
+<body>
+    
+    <h3>Student : Profile</h3>
+    <br>
+    <label for="img">Select image:</label>
+    <input type="file" id="studentImage" accept="image/*">
+    <br><br>
+
+    <input type="text" id="studentName" placeholder="Enter Student name">
+    <input type="number" id="studentId" placeholder="Enter ID number">
+    <input type="text" id="studentSubject" placeholder="Enter Student subject">
+    <input type="number" id="studentFee" placeholder="Student fee">
+
+    <label>Standard:
+        <select id="studentStandard">
+            <option value="STD 1">STD 1</option>
+            <option value="STD 2">STD 2</option>
+            <option value="STD 3">STD 3</option>
+            <option value="STD 4">STD 4</option>
+            <option value="STD 5">STD 5</option>
+            <option value="STD 6">STD 6</option>
+            <option value="STD 7">STD 7</option>
+            <option value="STD 8">STD 8</option>
+            <option value="STD 9">STD 9</option>
+            <option value="STD 10">STD 10</option>
+            <option value="STD 11">STD 11</option>
+            <option value="STD 12">STD 12</option>
+        </select>
+    </label>
+
+    <button onclick="addStudent()">Add Student</button>
+
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Student Name</th>
+                <th>ID Number</th>
+                <th>Subject</th>
+                <th>Fee</th>
+                <th>Standard</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable">
+        </tbody>
+    </table>
+
+</body>
+</html>
