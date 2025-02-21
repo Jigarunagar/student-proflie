@@ -1,4 +1,4 @@
-let students = []; // Array to store student data
+let students = []; 
 
 function addStudent() {
     const name = document.getElementById('studentName').value;
@@ -24,8 +24,8 @@ function addStudent() {
             standard: standard
         };
 
-        students.push(student); // Push new student to array
-        updateTable(); // Update the UI table
+        students.push(student);
+        updateTable(); 
     };
 
     reader.readAsDataURL(imageInput);
@@ -40,13 +40,13 @@ function addStudent() {
 }
 
 function deleteRow(index) {
-    students.splice(index, 1); // Remove student at given index
-    updateTable(); // Update the UI table
+    students.splice(index, 1); 
+    updateTable(); 
 }
 
 function updateTable() {
     const table = document.getElementById('studentTable');
-    table.innerHTML = ''; // Clear table
+    table.innerHTML = ''; 
 
     students.map((student, index) => {
         const row = document.createElement('tr');
