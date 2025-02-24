@@ -29,8 +29,6 @@ function addStudent() {
     };
 
     reader.readAsDataURL(imageInput);
-
-    // Clear the input fields
     document.getElementById('studentName').value = '';
     document.getElementById('studentId').value = '';
     document.getElementById('studentSubject').value = '';
